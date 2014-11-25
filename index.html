@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://desandro.github.io/3dtransforms/examples/card-01.html -->
+<html lang="en" class=" js csstransforms3d"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  
+  <!-- disable zooming -->
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=0">
+  
+  <title>Card 1 · Intro to CSS 3D transforms › Examples</title>
+  
+  <link rel="stylesheet" href="css/style.css" media="screen">
+
+
+    <style media="screen">
+    .container {
+      width: 260px;
+      height: 260px;
+      position: relative;
+      margin: 0 5px 5px;
+      border: 1px solid #CCC;
+      -webkit-perspective: 800px;
+         -moz-perspective: 800px;
+           -o-perspective: 800px;
+              perspective: 800px;
+    }
+
+    #card {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card .front {
+      background: black;
+    }
+
+    #card .back {
+      background: black;
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+
+
+
+
+
+    #card1 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card1.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card1 figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card1 .front {
+      background: red;
+    }
+
+    #card1 .back {
+      background: black;
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+
+
+
+
+    #card2 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card2.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card2 figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card2 .front {
+      background: red;
+    }
+
+    #card2 .back {
+      background: black;
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+
+
+
+
+
+    #card3 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card3.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card3 figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card3 .front {
+      background: red;
+    }
+
+    #card3 .back {
+      background: black;
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+
+
+
+
+
+
+
+    #card4 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card4.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card4 figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card4 .front {
+      background: red;
+    }
+
+    #card4 .back {
+      background: black;
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+
+
+
+
+
+
+
+
+
+    #card5 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card5.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card5 figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card5 .front {
+      background: red;
+    }
+
+    #card5 .back {
+      background: black;
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+
+
+
+
+
+
+
+
+
+    #card6 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card6.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card6 figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card6 .front {
+      background: red;
+    }
+
+    #card6 .back {
+      background: black;
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <h1>Rosalila Studio</h1>
+
+
+<table id="table-icons">
+<tr>
+  <td>
+  <section class="container">
+    <div id="card1" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+      <figure class="front"><img src="images/1.png"/></figure>
+      <figure class="back">Flappy Guacamaya</figure>
+    </div>
+  </section>
+  </td>
+</tr>
+<tr>
+  <td>
+  <section class="container">
+    <div id="card2" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+      <figure class="front"><img src="images/2.png"/></figure>
+      <figure class="back">The Space Shooter Network</figure>
+    </div>
+  </section>
+  </td>
+  <td>
+  <section class="container">
+    <div id="card3" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+      <figure class="front"><img src="images/3.png"/></figure>
+      <figure class="back">Dogefun</figure>
+    </div>
+  </section>
+  </td>
+</tr>
+<tr>
+  <td>
+  <section class="container">
+    <div id="card4" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+      <figure class="front"><img src="images/4.png"/></figure>
+      <figure class="back">Chan Blam</figure>
+    </div>
+  </section>
+  </td>
+  <td>
+  <section class="container">
+    <div id="card5" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+      <figure class="front"><img src="images/5.png"/></figure>
+      <figure class="back">Coworking</figure>
+    </div>
+  </section>
+  </td>
+  <td>
+  <section class="container">
+    <div id="card6" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+      <figure class="front"><img src="images/6.png"/></figure>
+      <figure class="back">Smackdown</figure>
+    </div>
+  </section>
+  </td>
+</tr>
+</table>
+
+  <section id="options">
+    <p><button id="flip">Flip Card</button></p>
+  </section>
+
+  <script src="js/utils.js"></script>
+  <script src="js/flip-card.js"></script>
+
+
+
+  <p id="disclaimer">Sorry, your browser does not support CSS 3D transforms. This example may be broken.</p>
+
+  <footer>
+  <p><a href="http://desandro.github.io/3dtransforms/">Intro to CSS 3D transforms</a> by David DeSandro</p>
+  <p>Article content licensed <a href="http://creativecommons.org/licenses/by/2.0/">CC-BY</a>.
+      All example code licensed <a href="http://desandro.mit-license.org/">MIT</a>.</p>
+  <p><a href="https://github.com/desandro/3dtransforms/issues/">Help improve these docs. Open an issue or pull request.</a></p>
+</footer>
+
+
+
+</body></html>
