@@ -441,7 +441,7 @@
   <td>
   <section class="container">
     <div id="card3" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
-      <figure class="front"><a href="http://dogefun.com"><img src="images/3.png"/></a></figure>
+      <figure class="front"><img src="images/3.png"/></figure>
       <figure class="back">Dogefun</figure>
     </div>
   </section>
