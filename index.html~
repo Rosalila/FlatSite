@@ -489,7 +489,7 @@ html *
   <section class="container">
     <div id="card2" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
       <figure class="front"><a href="http://rosalilastudio.com/index.php/pc-games/83-the-space-shooter-network"><img src="images/2.png"/></a></figure>
-      <figure class="back" onmouseover="hideAll();$('#detail2').show('slow');">The STG Engine</figure>
+      <figure class="back" onmouseover="hideAll();$('#detail2').show('slow');">The Shooter Engine</figure>
     </div>
   </section>
   </td>
@@ -536,7 +536,7 @@ html *
   <table align="right">
     <tr>
       <td align="right">
-        This website and all the projects listed are licencended under:
+        This website and all the projects listed are licencenced under:
       </td>
     </tr>
     <tr>
