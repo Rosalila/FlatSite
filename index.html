@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <!-- saved from url=(0060)http://desandro.github.io/3dtransforms/examples/card-01.html -->
-<html lang="en" class=" js csstransforms3d"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" class=" js csstransforms3d">
+<head>
+
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/flip-card.js"></script>
   
   <!-- disable zooming -->
   <meta name="viewport" content="initial-scale=1.0, user-scalable=0">
   
-  <title>Card 1 · Intro to CSS 3D transforms › Examples</title>
+  <title>Rosalila Studio</title>
   
   <link rel="stylesheet" href="css/style.css" media="screen">
 
 
     <style media="screen">
+html *
+{
+    font-family: "lato", latin-ext, serif;
+}
+
     .container {
-      width: 260px;
-      height: 260px;
+      width: 150px;
+      height: 150px;
       position: relative;
       margin: 0 5px 5px;
       border: 1px solid #CCC;
+
       -webkit-perspective: 800px;
          -moz-perspective: 800px;
            -o-perspective: 800px;
@@ -49,7 +65,7 @@
       display: block;
       height: 100%;
       width: 100%;
-      line-height: 260px;
+      line-height: 150px;
       color: white;
       text-align: center;
       font-weight: bold;
@@ -103,7 +119,7 @@
       display: block;
       height: 100%;
       width: 100%;
-      line-height: 260px;
+      line-height: 150px;
       color: white;
       text-align: center;
       font-weight: bold;
@@ -116,7 +132,7 @@
     }
 
     #card1 .front {
-      background: red;
+      background: white;
     }
 
     #card1 .back {
@@ -156,7 +172,7 @@
       display: block;
       height: 100%;
       width: 100%;
-      line-height: 260px;
+      line-height: 150px;
       color: white;
       text-align: center;
       font-weight: bold;
@@ -169,7 +185,7 @@
     }
 
     #card2 .front {
-      background: red;
+      background: white;
     }
 
     #card2 .back {
@@ -210,7 +226,7 @@
       display: block;
       height: 100%;
       width: 100%;
-      line-height: 260px;
+      line-height: 150px;
       color: white;
       text-align: center;
       font-weight: bold;
@@ -223,7 +239,7 @@
     }
 
     #card3 .front {
-      background: red;
+      background: white;
     }
 
     #card3 .back {
@@ -266,7 +282,7 @@
       display: block;
       height: 100%;
       width: 100%;
-      line-height: 260px;
+      line-height: 150px;
       color: white;
       text-align: center;
       font-weight: bold;
@@ -279,7 +295,7 @@
     }
 
     #card4 .front {
-      background: red;
+      background: white;
     }
 
     #card4 .back {
@@ -324,7 +340,7 @@
       display: block;
       height: 100%;
       width: 100%;
-      line-height: 260px;
+      line-height: 150px;
       color: white;
       text-align: center;
       font-weight: bold;
@@ -337,7 +353,7 @@
     }
 
     #card5 .front {
-      background: red;
+      background: white;
     }
 
     #card5 .back {
@@ -382,7 +398,7 @@
       display: block;
       height: 100%;
       width: 100%;
-      line-height: 260px;
+      line-height: 150px;
       color: white;
       text-align: center;
       font-weight: bold;
@@ -395,7 +411,7 @@
     }
 
     #card6 .front {
-      background: red;
+      background: white;
     }
 
     #card6 .back {
@@ -417,16 +433,55 @@
 
   <h1>Rosalila Studio</h1>
 
-
-<table id="table-icons">
+<table id="table-icons" width="100%">
 <tr>
-  <td>
+  <td width="150px">
   <section class="container">
     <div id="card1" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
       <figure class="front"><a href="https://play.google.com/store/apps/details?id=rosalila.flappy.guacamaya2"><img src="images/1.png"/></a></figure>
-      <figure class="back">Flappy Guacamaya</figure>
+      <figure class="back" onmouseover="hideAll();$('#detail1').show('slow');">
+        Flappy Guacamaya
+      </figure>
     </div>
   </section>
+  <td width="150px">
+  </td>
+  <td width="150px">
+  </td>
+  <td>
+  </td>
+  <td width="300px" rowspan="3" valign="top">
+<div style="width: 500px" >
+    <div id="detail1" style="display: none;" >
+      <h2>Flappy Guacamaya</h2>
+      <p>Juego casual multiplataforma disponible en la plataforma Android.</p>
+    </div>
+    <div id="detail2" style="display: none;">
+      <h2>The Space Shooter Network</h2>
+      <p>Engine para hacer juegos estilo STG, Shmups o shoot'em up/right.</p>
+    </div>
+    <div id="detail3" style="display: none;">
+      <h2>Dogefun.com</h2>
+      <p>Aplicaciones con temática de Dogecoin.</p>
+    </div>
+    <div id="detail4" style="display: none;">
+      <h2>Chan Balam</h2>
+      <p>Juego de peleas estilo maya.</p>
+    </div>
+    <div id="detail5" style="display: none;">
+      <h2>????</h2>
+      <p>????.</p>
+    </div>
+    <div id="detail6" style="display: none;">
+      <h2>Smackdown.club</h2>
+      <p>Website para enviar retos de juegos de pelea.</p>
+    </div>
+</div>
+  </td>
+  <td width="100%" align="right">
+    <a href="http://www.facebook.com/RosalilaStudioHN"><img src="images/facebook.png"/></a>
+    <br/>
+    <a href="http://www.github.com/Rosalila"><img src="images/github.png"/></a>
   </td>
 </tr>
 <tr>
@@ -434,7 +489,7 @@
   <section class="container">
     <div id="card2" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
       <figure class="front"><a href="http://rosalilastudio.com/index.php/pc-games/83-the-space-shooter-network"><img src="images/2.png"/></a></figure>
-      <figure class="back">The Space Shooter Network</figure>
+      <figure class="back" onmouseover="hideAll();$('#detail2').show('slow');">The Shooter Engine</figure>
     </div>
   </section>
   </td>
@@ -442,7 +497,7 @@
   <section class="container">
     <div id="card3" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
       <figure class="front"><a href="http://dogefun.com"><img src="images/3.png"/></a></figure>
-      <figure class="back">Dogefun</figure>
+      <figure class="back" onmouseover="hideAll();$('#detail3').show('slow');">Dogefun.com</figure>
     </div>
   </section>
   </td>
@@ -452,7 +507,7 @@
   <section class="container">
     <div id="card4" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
       <figure class="front"><img src="images/4.png"/></figure>
-      <figure class="back">Chan Blam</figure>
+      <figure class="back" onmouseover="hideAll();$('#detail4').show('slow');">Chan Blam</figure>
     </div>
   </section>
   </td>
@@ -460,7 +515,7 @@
   <section class="container">
     <div id="card5" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
       <figure class="front"><img src="images/5.png"/></figure>
-      <figure class="back">Coworking</figure>
+      <figure class="back" onmouseover="hideAll();$('#detail5').show('slow');">Coworking</figure>
     </div>
   </section>
   </td>
@@ -468,29 +523,28 @@
   <section class="container">
     <div id="card6" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
       <figure class="front"><a href="http://smackdown.club"><img src="images/6.png"/></a></figure>
-      <figure class="back">Smackdown</figure>
+      <figure class="back" onmouseover="hideAll();$('#detail6').show('slow');">Smackdown.club</figure>
     </div>
   </section>
   </td>
 </tr>
 </table>
 
-  <section id="options">
-    <p><button id="flip">Flip Card</button></p>
-  </section>
-
-  <script src="js/utils.js"></script>
-  <script src="js/flip-card.js"></script>
-
-
-
   <p id="disclaimer">Sorry, your browser does not support CSS 3D transforms. This example may be broken.</p>
 
   <footer>
-  <p><a href="http://desandro.github.io/3dtransforms/">Intro to CSS 3D transforms</a> by David DeSandro</p>
-  <p>Article content licensed <a href="http://creativecommons.org/licenses/by/2.0/">CC-BY</a>.
-      All example code licensed <a href="http://desandro.mit-license.org/">MIT</a>.</p>
-  <p><a href="https://github.com/desandro/3dtransforms/issues/">Help improve these docs. Open an issue or pull request.</a></p>
+  <table align="right">
+    <tr>
+      <td align="right">
+        This website and all the projects listed are licencended under:
+      </td>
+    </tr>
+    <tr>
+      <td align="right">
+        <a href="http://www.gnu.org/copyleft/gpl.html"><img src="http://www.gnu.org/graphics/gplv3-127x51.png"></img></a>
+      </td>
+    </tr>
+  </table>
 </footer>
 
 

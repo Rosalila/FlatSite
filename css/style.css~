@@ -6,7 +6,7 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   -webkit-text-size-adjust: none;
   color: #333;
-  max-width: 720px;
+
   margin: 0 auto;
   padding: 10px;
 }
@@ -90,7 +90,7 @@ code {
 
 /**** Docs ****/
 
-body.doc { max-width: 900px; }
+/*body.doc { max-width: 900px; }*/
 
 .doc #content {
   font-size: 14px;  
@@ -270,14 +270,3 @@ code .nc { color: #A78352; }  /* CSS class */
 code .m  { color: #DE8E50; } /* CSS value */
 code .nd { color: #9FAD7E; } /* CSS pseudo selector */
 
-
-#table-icons td {
-   padding:0; margin:0;
-}
-#table-icons tr {
-   padding:0; margin:0;
-}
-
-#table-icons {
-   border-collapse: collapse;
-}
