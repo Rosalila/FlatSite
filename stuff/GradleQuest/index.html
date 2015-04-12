@@ -1,0 +1,59 @@
+<h1>Guia para correr el juego GDXInvaders</h1>
+
+<p>En el ADT Bundle en el menu de arriba vamos a "Help" > "Install New Software.." y clickeamos en "Add..."</p>
+<img src="1.png"/>
+<p>LLenamos el formulario con la siguiente informacion: </p>
+<p>Name: Groovy</p>
+<p>Location: http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e4.2/</p>
+<img src="2.png"/>
+<p>Marcamos todos excepto "m2e Configurator ..."</p>
+<img src="3.png"/>
+<p>"Next"</p>
+<img src="4.png"/>
+<p>"Finish"</p>
+<img src="5.png"/>
+<p>Esperamos que termine la descarga.</p>
+<img src="6.png"/>
+<p>Reiniciamos</p>
+<img src="7.png"/>
+<p>De nuevo a "Help" > "Install New Software.." y clickeamos en "Add..."</p>
+<img src="8.png"/>
+<p>LLenamos el formulario con la siguiente informacion: </p>
+<p>Name: Groovy</p>
+<p>Location: http://dist.springsource.com/milestone/TOOLS/gradle</p>
+<p>********************************************************************************</p>
+<p>Si sale un mensaje que dice "No software site found at..." prueba con estos otros links en "Location"</p>
+<p>Location: http://dist.springsource.com/snapshot/TOOLS/gradle/nightly</p>
+<p>Location: http://dist.springsource.com/release/TOOLS/gradle</p>
+<p>Location: http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e4.2/</p>
+<img src="9.png"/>
+<p>Seleccionamos todas y clickeamos "Next".</p>
+<img src="10.png"/>
+<p>"Next".</p>
+<img src="11.png"/>
+<p>Aceptamos la licencia y "Finish".</p>
+<img src="12.png"/>
+<p>Esperamos que termine la descarga.</p>
+<img src="13.png"/>
+<p>Reiniciamos.</p>
+<img src="14.png"/>
+<p>Vamos a https://github.com/libgdx/libgdx-demo-invaders y descargamos el proyecto como .zip y lo descomprimimos</p>
+<img src="15.png"/>
+<p>Dentro de la carpta que descomprimieron ("libgdx-demo-invaders") creamos un archivo llamado "local.properties" (recomendacion para los usuarios de windows: usar notepad++ para crearlo). Escribir y guardar "sdk.dir=XXXX" en el archivo done XXXX es la posición de su carpeta del ADT Bunldle</p>
+<p>Por ejemplo el contenido de mi archivo es "sdk.dir=/home/turupawn/Software/adt-bundle-linux-x86_64-20140321"</p>
+<img src="16.png"/>
+<p>De nuevo en el ADT Bundle vamos a "File" > "Import" > "Gradle" > "Gradle prject"</p>
+<img src="17.png"/>
+<p>Seleccionamos la carpeta que importamos y clickeamos "Ok".</p>
+<img src="18.png"/>
+<p>Clickeamos "Build model" y esperamos.</p>
+<img src="19.png"/>
+<p>Seleccionamos todos los proyectos y clickeamos "Finish".</p>
+<img src="20.png"/>
+<p>En el menu de la izquierda selecionamos "libgdx-demo-invaders-desktop" y clikeamos el boton verde de play en la parte superior. Con esto ejeutamos el juego.</p>
+<img src="21.png"/>
+
+<p>Fuentes</p>
+<p>https://github.com/spring-projects/eclipse-integration-gradle/</p>
+<p>https://github.com/libgdx/libgdx-demo-invaders/</p>
+<p>http://libgdx.badlogicgames.com/documentation.html#gettingstarted</p>
