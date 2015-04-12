@@ -31,8 +31,8 @@ html *
       width: 150px;
       height: 150px;
       position: relative;
-      margin: 0 5px 5px;
-      border: 1px solid #CCC;
+      margin: 0 0px 0px;
+      border: 0px solid #CCC;
 
       -webkit-perspective: 800px;
          -moz-perspective: 800px;
@@ -433,13 +433,22 @@ html *
 
   <h1>Rosalila Studio</h1>
 
+<script>
+  var fliped1=false;
+  var fliped2=false;
+  var fliped3=false;
+  var fliped4=false;
+  var fliped5=false;
+  var fliped6=false;
+</script>
+
 <table id="table-icons" width="100%">
 <tr>
   <td width="150px">
   <section class="container">
-    <div id="card1" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+    <div id="card1" class=" flipped" onmouseover="showDetail(1);if(!fliped1)this.toggleClassName('flipped');fliped1=true;" onmouseout="">
       <figure class="front"><a href="https://play.google.com/store/apps/details?id=rosalila.flappy.guacamaya2"><img src="images/1.png"/></a></figure>
-      <figure class="back" onmouseover="hideAll();$('#detail1').show('slow');">
+      <figure class="back" onmouseover="">
         Flappy Guacamaya
       </figure>
     </div>
@@ -469,8 +478,8 @@ html *
       <p>Juego de peleas estilo maya.</p>
     </div>
     <div id="detail5" style="display: none;">
-      <h2>????</h2>
-      <p>????.</p>
+      <h2>The Rosalila Fighter Engine</h2>
+      <p>Engine para hacer juegos de peleas en 2d.</p>
     </div>
     <div id="detail6" style="display: none;">
       <h2>Smackdown.club</h2>
@@ -487,17 +496,17 @@ html *
 <tr>
   <td>
   <section class="container">
-    <div id="card2" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+    <div id="card2" class=" flipped" onmouseover="showDetail(2);if(!fliped2)this.toggleClassName('flipped');fliped2=true;" onmouseout="">
       <figure class="front"><a href="http://rosalilastudio.com/index.php/pc-games/83-the-space-shooter-network"><img src="images/2.png"/></a></figure>
-      <figure class="back" onmouseover="hideAll();$('#detail2').show('slow');">The Shooter Engine</figure>
+      <figure class="back" onmouseover="">The Shooter Engine</figure>
     </div>
   </section>
   </td>
   <td>
   <section class="container">
-    <div id="card3" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+    <div id="card3" class=" flipped" onmouseover="showDetail(3);if(!fliped3)this.toggleClassName('flipped');fliped3=true;" onmouseout="">
       <figure class="front"><a href="http://dogefun.com"><img src="images/3.png"/></a></figure>
-      <figure class="back" onmouseover="hideAll();$('#detail3').show('slow');">Dogefun.com</figure>
+      <figure class="back" onmouseover="">Dogefun.com</figure>
     </div>
   </section>
   </td>
@@ -505,25 +514,25 @@ html *
 <tr>
   <td>
   <section class="container">
-    <div id="card4" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+    <div id="card4" class=" flipped" onmouseover="showDetail(4);if(!fliped4)this.toggleClassName('flipped');fliped4=true;" onmouseout="">
       <figure class="front"><img src="images/4.png"/></figure>
-      <figure class="back" onmouseover="hideAll();$('#detail4').show('slow');">Chan Blam</figure>
+      <figure class="back" onmouseover="">Chan Blam</figure>
     </div>
   </section>
   </td>
   <td>
   <section class="container">
-    <div id="card5" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+    <div id="card5" class=" flipped" onmouseover="showDetail(5);if(!fliped5)this.toggleClassName('flipped');fliped5=true;" onmouseout="">
       <figure class="front"><img src="images/5.png"/></figure>
-      <figure class="back" onmouseover="hideAll();$('#detail5').show('slow');">Coworking</figure>
+      <figure class="back" onmouseover="">Rosalila Fighter</figure>
     </div>
   </section>
   </td>
   <td>
   <section class="container">
-    <div id="card6" class=" flipped" onmouseover="this.toggleClassName('flipped');" onmouseout="this.toggleClassName('flipped');">
+    <div id="card6" class=" flipped" onmouseover="showDetail(6);if(!fliped6)this.toggleClassName('flipped');fliped6=true;" onmouseout="">
       <figure class="front"><a href="http://smackdown.club"><img src="images/6.png"/></a></figure>
-      <figure class="back" onmouseover="hideAll();$('#detail6').show('slow');">Smackdown.club</figure>
+      <figure class="back" onmouseover="">Smackdown.club</figure>
     </div>
   </section>
   </td>

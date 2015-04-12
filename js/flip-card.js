@@ -17,3 +17,26 @@ function hideAll() {
   $('#detail5').hide('slow');
   $('#detail6').hide('slow');
 }
+
+function showDetail(num) {
+  if(num!=1)
+    $('#detail1').hide('slow');
+  if(num!=2)
+    $('#detail2').hide('slow');
+  if(num!=3)
+    $('#detail3').hide('slow');
+  if(num!=4)
+    $('#detail4').hide('slow');
+  if(num!=5)
+    $('#detail5').hide('slow');
+  if(num!=6)
+    $('#detail6').hide('slow');
+
+  //if($('#detail'+num).is(":visible"))
+    $('#detail'+num).show('slow');
+}
+
+function test()
+{
+  $('#card1').toggleClassName('flipped');
+}
