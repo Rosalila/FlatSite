@@ -57,6 +57,19 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
+.btn-light-disabled {
+    border-radius: 0;
+    color: #333;
+    background-color: rgba(100,100,100,1);
+}
+
+.btn-light-disabled:hover,
+.btn-light-disabled:focus,
+.btn-light-disabled:active {
+    color: #333;
+    background-color: rgba(100,100,100,1);
+}
+
 /* Custom Horizontal Rule */
 
 hr.small {
